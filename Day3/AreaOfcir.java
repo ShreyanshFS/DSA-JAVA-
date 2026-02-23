@@ -6,6 +6,5 @@ public class AreaOfcir {
         float rad = sc.nextFloat();
         float a = 3.14f*rad*rad;
         System.out.println(a);
-    }
-    
+    } 
 }
