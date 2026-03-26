@@ -22,6 +22,6 @@ public class BinomialCoff {
         int n = sc.nextInt();
         int r=sc.nextInt();
         int op =bc(n,r);
-        System.out.println("Binomial Coefficient of " +n+" and "+r+" is "+op);
+        System.out.println("Binomial Coefficient of " +n+" and "+r+  " is "+op);
     }  
 }
