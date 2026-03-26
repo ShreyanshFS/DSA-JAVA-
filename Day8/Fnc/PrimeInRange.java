@@ -12,6 +12,7 @@ public class PrimeInRange {
                 }
             }
             if (count == 0 && i > 1){
+                
                 System.out.println(i);
             }
         }
