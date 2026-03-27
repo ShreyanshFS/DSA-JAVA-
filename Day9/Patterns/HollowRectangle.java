@@ -20,6 +20,7 @@ public class HollowRectangle {
         Scanner sc = new Scanner(System.in);
         int r = sc.nextInt();
         int c = sc.nextInt();
+        sc.close();
         hr(r,c);
     } 
 }
