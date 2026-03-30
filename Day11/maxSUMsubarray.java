@@ -1,23 +1,28 @@
 import java.util.Scanner;
 
-public class Subarray {
-    public static void subarray(int array[]){
-        int ts =0;
+public class maxSUMsubarray {
+        public static void sMs(int array[]){
+        int cs =0;
+        int ms = Integer.MIN_VALUE;
+
         for (int i = 0;i<array.length;i++){
             int s = i;
             for(int j=i;j<array.length;j++){
                 int e=j;
+                cs = 0;
                 for (int k=s;k<=e;k++){
-                    System.out.print(array[k]+" ");
+                    cs+=array[k];
                 }
-                ts++;
-                System.out.println();
+                System.out.println(cs);
+                if (ms<cs){
+                    ms = cs;
+                }
             }
-            System.out.println();
-            System.out.println(ts);
         }
+        
+        System.out.println("Max sum=" + ms);
     }
-        public static void main(String args[]){
+    public static void main(String args[]){
 
         System.out.println("Enter the no. of sub,marks and the mun to be found :");        Scanner sc = new Scanner(System.in);
         int s = sc.nextInt();
@@ -26,6 +31,6 @@ public class Subarray {
             array[i]=sc.nextInt();
         }
         sc.close();
-        subarray(array);
+        sMs(array);
     }
 }
