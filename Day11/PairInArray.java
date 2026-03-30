@@ -2,10 +2,12 @@ import java.util.Scanner;
 
 public class PairInArray {
     public static void p(int array[]){
+        int tp =0;
         for (int i = 0;i<array.length;i++){
             int c = array[i];
             for (int j = i+1;j<array.length;j++){
                 System.out.print("("+c+","+array[j]+")");
+                tp++;
             }
             System.out.println();
         }
