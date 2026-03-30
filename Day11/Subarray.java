@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Subarray {
     public static void subarray(int array[]){
+        int ts =0;
         for (int i = 0;i<array.length;i++){
             int s = i;
             for(int j=i;j<array.length;j++){
@@ -9,9 +10,11 @@ public class Subarray {
                 for (int k=s;k<=e;k++){
                     System.out.print(array[k]+" ");
                 }
+                ts++;
                 System.out.println();
             }
             System.out.println();
+            System.out.println(ts);
         }
     }
         public static void main(String args[]){
@@ -24,6 +27,6 @@ public class Subarray {
         }
         sc.close();
         subarray(array);
-        System.out.println();
+
     }
 }
