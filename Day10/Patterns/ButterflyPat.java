@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class ButterflyPat {
     public static void p(int n){
         for (int i=1;i<=n;i++){
